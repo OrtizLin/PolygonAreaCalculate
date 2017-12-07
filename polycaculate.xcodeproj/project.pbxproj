@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6699AF41FD912CA00B5752D /* polygon_calculate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6699AF31FD912CA00B5752D /* polygon_calculate.m */; };
 		A6FC6A5D1FD8D4E3002D875F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC6A5C1FD8D4E3002D875F /* AppDelegate.m */; };
 		A6FC6A601FD8D4E3002D875F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FC6A5F1FD8D4E3002D875F /* ViewController.m */; };
 		A6FC6A631FD8D4E3002D875F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FC6A611FD8D4E3002D875F /* Main.storyboard */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A6699AF21FD912CA00B5752D /* polygon_calculate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = polygon_calculate.h; sourceTree = "<group>"; };
+		A6699AF31FD912CA00B5752D /* polygon_calculate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = polygon_calculate.m; sourceTree = "<group>"; };
 		A6FC6A581FD8D4E3002D875F /* polycaculate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = polycaculate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FC6A5B1FD8D4E3002D875F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A6FC6A5C1FD8D4E3002D875F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 				A6FC6A5C1FD8D4E3002D875F /* AppDelegate.m */,
 				A6FC6A5E1FD8D4E3002D875F /* ViewController.h */,
 				A6FC6A5F1FD8D4E3002D875F /* ViewController.m */,
+				A6699AF21FD912CA00B5752D /* polygon_calculate.h */,
+				A6699AF31FD912CA00B5752D /* polygon_calculate.m */,
 				A6FC6A611FD8D4E3002D875F /* Main.storyboard */,
 				A6FC6A671FD8D4E3002D875F /* Assets.xcassets */,
 				A6FC6A691FD8D4E3002D875F /* LaunchScreen.storyboard */,
@@ -269,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6FC6A661FD8D4E3002D875F /* polycaculate.xcdatamodeld in Sources */,
+				A6699AF41FD912CA00B5752D /* polygon_calculate.m in Sources */,
 				A6FC6A601FD8D4E3002D875F /* ViewController.m in Sources */,
 				A6FC6A6E1FD8D4E3002D875F /* main.m in Sources */,
 				A6FC6A5D1FD8D4E3002D875F /* AppDelegate.m in Sources */,
