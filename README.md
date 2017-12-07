@@ -2,6 +2,8 @@
 
 Simple code to calculate polygon area.
 
+
+Give more then three point to create a polygon and get area.
 ```javascript
 -(double)GetAreaOfPolygon:(NSArray*)pointArray{
     if(pointArray.count<3)
@@ -14,6 +16,8 @@ Simple code to calculate polygon area.
 }
 ```
 
+
+Give two point(left_upper & right_down) to create a circle and get area.
 ```javascript
 -(double)GetAreaOfCircle:(NSArray*)pointArray{
     double xr =[pointArray.lastObject CGPointValue].x-[pointArray.firstObject CGPointValue].x;
@@ -24,6 +28,8 @@ Simple code to calculate polygon area.
 }
 ```
 
+
+Calculate the distance of two point.
 ```javascript
 -(double)GetDistanceOfTwoPoint:(NSArray*)pointArray{
     float x =[pointArray.firstObject CGPointValue].x-[pointArray.lastObject CGPointValue].x;
