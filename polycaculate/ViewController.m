@@ -24,6 +24,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     NSMutableArray*arr=[[NSMutableArray alloc]initWithObjects:[NSValue valueWithCGPoint:CGPointMake(100, 50)],[NSValue valueWithCGPoint:CGPointMake(120, 70)],[NSValue valueWithCGPoint:CGPointMake(150, 90)],[NSValue valueWithCGPoint:CGPointMake(110, 20)],[NSValue valueWithCGPoint:CGPointMake(90, 60)], nil];
     NSMutableArray*circleArr =[[NSMutableArray alloc]initWithObjects:[NSValue valueWithCGPoint:CGPointMake(100, 50)],[NSValue valueWithCGPoint:CGPointMake(120, 70)],nil];
+    
    NSLog(@"%f",[self.OA_polygon GetAreaOfPolygon:arr]);
    NSLog(@"%f", [self.OA_polygon GetAreaOfCircle:circleArr]);
    NSLog(@"%f",[self.OA_polygon GetDistanceOfTwoPoint:circleArr]);
