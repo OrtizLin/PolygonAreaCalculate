@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A618A01A1FDA85B5008D642E /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		A6699AF21FD912CA00B5752D /* polygon_calculate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = polygon_calculate.h; sourceTree = "<group>"; };
 		A6699AF31FD912CA00B5752D /* polygon_calculate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = polygon_calculate.m; sourceTree = "<group>"; };
 		A6FC6A581FD8D4E3002D875F /* polycaculate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = polycaculate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +111,7 @@
 				A6FC6A5C1FD8D4E3002D875F /* AppDelegate.m */,
 				A6FC6A5E1FD8D4E3002D875F /* ViewController.h */,
 				A6FC6A5F1FD8D4E3002D875F /* ViewController.m */,
+				A618A01A1FDA85B5008D642E /* Config.h */,
 				A6699AF21FD912CA00B5752D /* polygon_calculate.h */,
 				A6699AF31FD912CA00B5752D /* polygon_calculate.m */,
 				A6FC6A611FD8D4E3002D875F /* Main.storyboard */,
@@ -332,7 +334,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A6FC6A851FD8D4E3002D875F /* Debug */ = {
+		A618A00E1FDA81C8008D642E /* Dev */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -371,7 +373,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
+					"Dev=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -385,7 +387,148 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
-			name = Debug;
+			name = Dev;
+		};
+		A618A00F1FDA81C8008D642E /* Dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VW348Q679Z;
+				INFOPLIST_FILE = polycaculate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kkk.polycaculate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Dev;
+		};
+		A618A0101FDA81C8008D642E /* Dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VW348Q679Z;
+				INFOPLIST_FILE = polycaculateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kkk.polycaculateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/polycaculate.app/polycaculate";
+			};
+			name = Dev;
+		};
+		A618A0111FDA81C8008D642E /* Dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VW348Q679Z;
+				INFOPLIST_FILE = polycaculateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kkk.polycaculateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = polycaculate;
+			};
+			name = Dev;
+		};
+		A618A0121FDA81D3008D642E /* Master */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"Master=2",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Master;
+		};
+		A618A0131FDA81D3008D642E /* Master */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VW348Q679Z;
+				INFOPLIST_FILE = polycaculate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kkk.polycaculate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Master;
+		};
+		A618A0141FDA81D3008D642E /* Master */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VW348Q679Z;
+				INFOPLIST_FILE = polycaculateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kkk.polycaculateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/polycaculate.app/polycaculate";
+			};
+			name = Master;
+		};
+		A618A0151FDA81D3008D642E /* Master */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VW348Q679Z;
+				INFOPLIST_FILE = polycaculateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kkk.polycaculateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = polycaculate;
+			};
+			name = Master;
 		};
 		A6FC6A861FD8D4E3002D875F /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -436,20 +579,6 @@
 			};
 			name = Release;
 		};
-		A6FC6A881FD8D4E3002D875F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VW348Q679Z;
-				INFOPLIST_FILE = polycaculate/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kkk.polycaculate;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		A6FC6A891FD8D4E3002D875F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -463,21 +592,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
-		};
-		A6FC6A8B1FD8D4E3002D875F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VW348Q679Z;
-				INFOPLIST_FILE = polycaculateTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kkk.polycaculateTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/polycaculate.app/polycaculate";
-			};
-			name = Debug;
 		};
 		A6FC6A8C1FD8D4E3002D875F /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -493,20 +607,6 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/polycaculate.app/polycaculate";
 			};
 			name = Release;
-		};
-		A6FC6A8E1FD8D4E3002D875F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VW348Q679Z;
-				INFOPLIST_FILE = polycaculateUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kkk.polycaculateUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = polycaculate;
-			};
-			name = Debug;
 		};
 		A6FC6A8F1FD8D4E3002D875F /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -528,7 +628,8 @@
 		A6FC6A531FD8D4E2002D875F /* Build configuration list for PBXProject "polycaculate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6FC6A851FD8D4E3002D875F /* Debug */,
+				A618A0121FDA81D3008D642E /* Master */,
+				A618A00E1FDA81C8008D642E /* Dev */,
 				A6FC6A861FD8D4E3002D875F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -537,7 +638,8 @@
 		A6FC6A871FD8D4E3002D875F /* Build configuration list for PBXNativeTarget "polycaculate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6FC6A881FD8D4E3002D875F /* Debug */,
+				A618A0131FDA81D3008D642E /* Master */,
+				A618A00F1FDA81C8008D642E /* Dev */,
 				A6FC6A891FD8D4E3002D875F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -546,7 +648,8 @@
 		A6FC6A8A1FD8D4E3002D875F /* Build configuration list for PBXNativeTarget "polycaculateTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6FC6A8B1FD8D4E3002D875F /* Debug */,
+				A618A0141FDA81D3008D642E /* Master */,
+				A618A0101FDA81C8008D642E /* Dev */,
 				A6FC6A8C1FD8D4E3002D875F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -555,7 +658,8 @@
 		A6FC6A8D1FD8D4E3002D875F /* Build configuration list for PBXNativeTarget "polycaculateUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6FC6A8E1FD8D4E3002D875F /* Debug */,
+				A618A0151FDA81D3008D642E /* Master */,
+				A618A0111FDA81C8008D642E /* Dev */,
 				A6FC6A8F1FD8D4E3002D875F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

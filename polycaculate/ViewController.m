@@ -7,6 +7,7 @@
 //
 #import "ViewController.h"
 #import "polygon_calculate.h"
+#import "Config.h"
 @interface ViewController ()<OA_polygonDelegate>
 
 @end
@@ -28,6 +29,7 @@
     NSLog(@"Get area from five point : %f",[self.OA_polygon GetAreaOfPolygon:arr]);
     NSLog(@"Get circle area from two point :%f", [self.OA_polygon GetAreaOfCircle:arrtwo]);
     NSLog(@"Get distance from two point :%f",[self.OA_polygon GetDistanceOfTwoPoint:arrtwo]);
+    NSLog(@"WHAT CONFIG: %@",kHost);
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
